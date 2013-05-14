@@ -54,10 +54,68 @@ namespace TestProject
             Fraccion resul = new Fraccion();
             resul.Sumar(f1, f2);
 
-            //bool b = result.esIgual(new Fraccion(9,9));
             bool b = (resul.getNumerador() == 9) && (resul.getDenominador() == 9);
             Assert.AreEqual(true, b);
             
+        }
+
+        [TestMethod]
+        public void testIsPositiveFraccionConNumYDenPositivo()
+        {
+            Fraccion f = new Fraccion(1, 3);
+            Assert.AreEqual(true, f.getSigno());
+        }
+
+
+        [TestMethod]
+        public void testIsPositiveFraccionConNumYDenNegativo()
+        {
+            Fraccion f = new Fraccion(-1, -3);
+            Assert.AreEqual(true, f.getSigno());
+        }
+
+
+        [TestMethod]
+        public void testIsNegativeFraccionConNumNegativo()
+        {
+            Fraccion f = new Fraccion(-1, 3);
+            Assert.AreEqual(false, f.getSigno());
+        }
+
+        
+        [TestMethod]
+        public void testIsNegativeFraccionConDenNegativo()
+        {
+            Fraccion f = new Fraccion(1, -3);
+            Assert.AreEqual(false, f.getSigno());
+        }
+
+
+        [TestMethod]
+        public void testSumarMetodoPublicoDeFraccionConSignosEnOperador1()
+        {
+            Fraccion f1 = new Fraccion(-1, 3);
+            Fraccion f2 = new Fraccion(2, 3);
+            Fraccion resul = new Fraccion();
+            resul.Sumar(f1, f2);
+
+            resul.Simplificar();
+            bool b = (resul.getNumerador() == 1) && (resul.getDenominador() == 3);
+            Assert.AreEqual(true, b);
+        }
+
+        
+        [TestMethod]
+        public void testSumarMetodoPublicoDeFraccionConSignosEnOperador2()
+        {
+            Fraccion f1 = new Fraccion(1, 3);
+            Fraccion f2 = new Fraccion(-2, 3);
+            Fraccion resul = new Fraccion();
+            resul.Sumar(f1, f2);
+
+            resul.Simplificar();
+            bool b = (resul.getNumerador() == 1) && (resul.getDenominador() == 3);
+            Assert.AreEqual(true, b);
         }
 
         [TestMethod]
@@ -70,7 +128,18 @@ namespace TestProject
 
             bool b = (resul.getNumerador() == -3) && (resul.getDenominador() == 9);
             Assert.AreEqual(true, b);
+        }
 
+        [TestMethod]
+        public void testRestarMetodoPublicoDeFraccion1()
+        {
+            Fraccion f1 = new Fraccion(1, 3);
+            Fraccion f2 = new Fraccion(-2, 3);
+            Fraccion resul = new Fraccion();
+            resul.Restar(f1, f2);
+
+            bool b = (resul.getNumerador() == 9) && (resul.getDenominador() == 9);
+            Assert.AreEqual(true, b);
         }
         
         [TestMethod]
@@ -78,6 +147,44 @@ namespace TestProject
         {
             Fraccion f1 = new Fraccion(1, 3);
             Fraccion f2 = new Fraccion(2, 3);
+            Fraccion resul = new Fraccion();
+            resul.Multiplicar(f1, f2);
+
+            bool b = (resul.getNumerador() == 2) && (resul.getDenominador() == 9);
+            Assert.AreEqual(true, b);
+        }
+
+        [TestMethod]
+        public void testMultiplicarMetodoPublicoDeFraccionNegativo1()
+        {
+            Fraccion f1 = new Fraccion(-1, 3);
+            Fraccion f2 = new Fraccion(2, 3);
+            Fraccion resul = new Fraccion();
+            resul.Multiplicar(f1, f2);
+
+            
+            bool b = (resul.getNumerador() == -2) && (resul.getDenominador() == 9);
+            Assert.AreEqual(true, b);
+        }
+
+        [TestMethod]
+        public void testMultiplicarMetodoPublicoDeFraccionNegativo2()
+        {
+            Fraccion f1 = new Fraccion(1, 3);
+            Fraccion f2 = new Fraccion(-2, 3);
+            Fraccion resul = new Fraccion();
+            resul.Multiplicar(f1, f2);
+
+            
+            bool b = (resul.getNumerador() == -2) && (resul.getDenominador() == 9);
+            Assert.AreEqual(true, b);
+        }
+
+        [TestMethod]
+        public void testMultiplicarMetodoPublicoDeFraccionNegativo3()
+        {
+            Fraccion f1 = new Fraccion(-1, 3);
+            Fraccion f2 = new Fraccion(-2, 3);
             Fraccion resul = new Fraccion();
             resul.Multiplicar(f1, f2);
 
@@ -98,6 +205,42 @@ namespace TestProject
         }
 
         [TestMethod]
+        public void testDividirMetodoPublicoDeFraccion1()
+        {
+            Fraccion f1 = new Fraccion(-1, 3);
+            Fraccion f2 = new Fraccion(2, 3);
+            Fraccion resul = new Fraccion();
+            resul.Dividir(f1, f2);
+            
+            bool b = (resul.getNumerador() == -3) && (resul.getDenominador() == 6);
+            Assert.AreEqual(true, b);
+        }
+
+        [TestMethod]
+        public void testDividirMetodoPublicoDeFraccion2()
+        {
+            Fraccion f1 = new Fraccion(1, 3);
+            Fraccion f2 = new Fraccion(-2, 3);
+            Fraccion resul = new Fraccion();
+            resul.Dividir(f1, f2);
+
+            bool b = (resul.getNumerador() == -3) && (resul.getDenominador() == 6);
+            Assert.AreEqual(true, b);
+        }
+
+        [TestMethod]
+        public void testDividirMetodoPublicoDeFraccion3()
+        {
+            Fraccion f1 = new Fraccion(-1, 3);
+            Fraccion f2 = new Fraccion(-2, 3);
+            Fraccion resul = new Fraccion();
+            resul.Dividir(f1, f2);
+
+            bool b = (resul.getNumerador() == 3) && (resul.getDenominador() == 6);
+            Assert.AreEqual(true, b);
+        }
+
+        [TestMethod]
         public void testSimplificarFraccion()
         {
             Fraccion f = new Fraccion(7, 14);
@@ -108,6 +251,9 @@ namespace TestProject
 
             Assert.AreEqual(true,b);
         }
+
+
+
 
         [TestMethod]
         public void testConstructorDefaultProblema()
@@ -120,6 +266,6 @@ namespace TestProject
             Fraccion result = p.getResultado();
         }
 
-        //suma, mult, div, resta, simplificacion, considerar signos de las fracciones
+        
     }
 }
