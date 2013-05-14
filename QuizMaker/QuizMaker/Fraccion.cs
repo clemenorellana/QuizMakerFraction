@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuizMaker
 {
-<<<<<<< HEAD
-    
-    class Fraccion
+    /*class Fraccion
     {
         private int _numerador;
         private int _denominador;
@@ -18,8 +16,9 @@ namespace QuizMaker
             this._denominador = 0;
             this._numerador = 0;
         }
+    }*/
 
-=======
+
     public class Fraccion
     {
         private int numerador;
@@ -48,6 +47,16 @@ namespace QuizMaker
         public int getDenominador()
         {
             return denominador;
+        }
+
+        public void setNumerador(int num)
+        {
+            this.numerador = num;
+        }
+
+        public void setDenominador(int den)
+        {
+            this.denominador = den;
         }
 
         public void Sumar(Fraccion f1, Fraccion f2)
@@ -81,7 +90,24 @@ namespace QuizMaker
             this.numerador = n;
             this.denominador = d;
         }
->>>>>>> Agregue los test de las operaciones aritmeticas basicas
 
+        public void Simplificar()
+        {
+            int menor=0;
+            
+            if (this.getNumerador() > this.getDenominador())
+                menor = this.getDenominador();
+            else
+                menor = this.getNumerador();
+
+            for (int i = 1; i <= menor; i++)
+            {
+                if (this.getNumerador() % i == 0 && this.getDenominador() % i == 0)
+                {
+                    this.setNumerador(this.getDenominador() / i);
+                    this.setDenominador(this.getDenominador() / i);
+                }
+            }
+        }
     }
 }

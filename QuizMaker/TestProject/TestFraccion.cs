@@ -5,7 +5,7 @@ using QuizMaker;
 namespace TestProject
 {
     [TestClass]
-    public class UnitTest1
+    public class TestFraccion
     {
         [TestMethod]
         public void testConstructorDefaultFraccion()
@@ -98,6 +98,18 @@ namespace TestProject
         }
 
         [TestMethod]
+        public void testSimplificarFraccion()
+        {
+            Fraccion f = new Fraccion(7, 14);
+
+            f.Simplificar();
+            
+            bool b = (f.getNumerador() == 1) && (f.getDenominador() == 2);
+
+            Assert.AreEqual(true,b);
+        }
+
+        [TestMethod]
         public void testConstructorDefaultProblema()
         {
             Problema p = new Problema();
@@ -107,5 +119,7 @@ namespace TestProject
             char operador = p.gerOperador();
             Fraccion result = p.getResultado();
         }
+
+        //suma, mult, div, resta, simplificacion, considerar signos de las fracciones
     }
 }
