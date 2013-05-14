@@ -91,23 +91,29 @@ namespace QuizMaker
             this.denominador = d;
         }
 
+        private int GCD(int num, int den)
+        {
+            while (true)
+            {
+                num = num % den;
+                if (num == 0)
+                    return den;
+
+                den = den % den;
+                if (den == 0)
+                    return num;
+            }
+        }
+
         public void Simplificar()
         {
-            int menor=0;
-            
-            if (this.getNumerador() > this.getDenominador())
-                menor = this.getDenominador();
-            else
-                menor = this.getNumerador();
-
-            for (int i = 1; i <= menor; i++)
-            {
-                if (this.getNumerador() % i == 0 && this.getDenominador() % i == 0)
-                {
-                    this.setNumerador(this.getDenominador() / i);
-                    this.setDenominador(this.getDenominador() / i);
-                }
-            }
+            int num = this.getNumerador();
+            int den = this.getDenominador();
+            int gcd = GCD(num, den);
+            num = num / gcd;
+            den = den / gcd;
+            this.setNumerador(num);
+            this.setDenominador(den);
         }
     }
 }
