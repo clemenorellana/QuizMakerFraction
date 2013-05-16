@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ac6c5bbc-1de8-419e-83f5-ccae8b97569c" name="Activity_Example" linkedPackageId="a98ab739-d95a-48d9-88e8-cf136e6ec04d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="16f5c8f0-322d-42d4-8bdf-b7601e7be6ec">
+      <elementDefinition Id="20243282-aecd-48b4-adc2-e6302ac2c880" />
+      <body>Si la respuesta es correcta</body>
+    </comment>
+    <comment Id="53b285c9-7c9c-4d67-b677-819de9e1dbe2">
+      <elementDefinition Id="0d502025-0eb4-4b4f-86ea-f937471ee0e2" />
+      <body>Revisar si la respuesta seleccionada es la correcta
+</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="81a26b7e-253c-43fd-94af-c7cc4a716ef5" LastKnownName="Decision1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="53c1d155-5225-4f31-a0ee-d3b452360ce4">
+      <profileInstance Id="4a0e4aa3-0a95-4bbe-a6ba-eeba9e4644af" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="379c9bec-97aa-4358-9cd7-d31eb7077064">
+      <profileInstance Id="2f093fca-7051-429b-8f28-27f3fb7f2d0e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="7b10b2fd-3427-42cf-b025-35a462703e81" name="Activity_Example" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="f9578ba0-0b50-4fc3-b5a2-a5f7cad10d16" />
+        <nodes>
+          <initialNode Id="96049dcf-287f-4b8c-94df-c154eea382f5" name="Initial1" isLeaf="false">
+            <elementDefinition Id="839dbbff-db4b-476d-a848-1ede58e439dc" />
+            <flowNodeTargets>
+              <controlFlow Id="932cafeb-81b3-4b17-928d-1f7aedd6c2b1" isLeaf="false">
+                <opaqueActionMoniker Id="e7029b66-2138-4b18-bde1-0ba53be597e7" LastKnownName="Seleccionar nivel" />
+                <elementDefinition Id="08ff1115-d6a6-4aa4-a445-1c2615b7f173" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="e7029b66-2138-4b18-bde1-0ba53be597e7" name="Seleccionar nivel" isLeaf="false">
+            <elementDefinition Id="a39974be-5542-455c-b1f0-94b8b316c834" />
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="d570ecf2-e94c-458a-a723-e86d1b620fe6" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="18fc2a75-7ef8-47ee-ae05-b4814d4abcf9" />
+                  <objectFlowTargets>
+                    <objectFlow Id="c6e897a3-e7dc-4b88-8f25-e3fdcf2b015a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="42c6e5c7-2d9e-4cff-ba3a-d4ec8cf234fe" LastKnownName="Nivel" />
+                      <elementDefinition Id="782e2a9b-7b3b-4ab5-9905-0bc76c1800cf" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="abe97095-4173-4889-84b0-a28484c69b84" name="2147483647" value="2147483647">
+                      <elementDefinition Id="825299be-33d7-4ab2-b3ca-2d29b88f1768" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="3c54bdb5-f9cd-461b-ac13-1cb66509ce46" name="Generar problema random" isLeaf="false">
+            <elementDefinition Id="52bcc1d8-3bce-409c-a963-29df4316eacf" />
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="ef14651d-cc57-4b34-be26-ac9b2e6a3d1c" name="Problema" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="8e9ca812-c1c5-439e-b81c-2c0e3f8b0b2d" />
+                  <objectFlowTargets>
+                    <objectFlow Id="a02f1740-c0c9-4888-957d-4220d485130a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="d60d3fe3-4b49-4cdb-a71b-932e4ec95bff" />
+                      <elementDefinition Id="00e364f3-0741-4607-ad11-efe34b71a9e5" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="84ed9fc8-082c-44e1-a69a-fa3fe9ad256a" name="2147483647" value="2147483647">
+                      <elementDefinition Id="a30daa54-69b5-4e7d-a55b-df2b0be245dc" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+              <opaqueActionHasInputValues>
+                <inputPin Id="42c6e5c7-2d9e-4cff-ba3a-d4ec8cf234fe" name="Nivel" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="6497b442-94cb-481c-a6a6-99be25a93a29" />
+                  <upperBound>
+                    <literalInteger Id="c6956c60-325e-4d55-ba6e-b10059837c3a" name="2147483647" value="2147483647">
+                      <elementDefinition Id="2b3932e9-eed4-4669-87fc-5accbf5c797b" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="b18e777a-d0c9-4092-b280-8f977ea1ad9f" name="Mostrar el problema" isLeaf="false">
+            <elementDefinition Id="a4ec33d2-880e-4489-b8fe-d3f8288424a4" />
+            <flowNodeTargets>
+              <controlFlow Id="29fccece-a3fb-4c38-b3ce-bb5de95f40f5" isLeaf="false">
+                <opaqueActionMoniker Id="53bc9a01-8b6d-4f3e-9b49-c5748c28012b" LastKnownName="Seleccionar la respuesta" />
+                <elementDefinition Id="1c2ef49f-ba0f-4051-8f47-04e3fdc93e40" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="d60d3fe3-4b49-4cdb-a71b-932e4ec95bff" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="b4a7d8c1-f95c-496a-8a81-45a4885e5c94" />
+                  <upperBound>
+                    <literalInteger Id="4fe76634-45e4-4017-a0e0-d01135cebbb1" name="2147483647" value="2147483647">
+                      <elementDefinition Id="c2792005-82f9-457e-810d-23108fc0185c" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="53bc9a01-8b6d-4f3e-9b49-c5748c28012b" name="Seleccionar la respuesta" isLeaf="false">
+            <elementDefinition Id="73504606-6d72-4237-83fb-025d132a1c67" />
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="deb7bbcc-5e57-4f09-a291-a66260f142fb" name="Respuesta" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="91dba11f-5c70-4a7a-934f-115056f5827f" />
+                  <objectFlowTargets>
+                    <objectFlow Id="3070b8d1-787a-44df-bf43-e13af4b4c560" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <inputPinMoniker Id="b588fef0-9146-4e34-9eab-483979e867c9" />
+                      <elementDefinition Id="5721ffe3-1d2f-40ed-83f6-a968ea7fdeae" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="bc48ce7b-6180-4bbe-a0f6-39dba443c6a8" name="2147483647" value="2147483647">
+                      <elementDefinition Id="f83b24dc-0409-46d8-a8b8-18caec0dae86" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="c74d775a-370b-495c-b885-25c9fe7375e8" name="Verificar respuesta" isLeaf="false">
+            <elementDefinition Id="d1663bab-8404-4018-9578-86f3bc55144d" />
+            <flowNodeTargets>
+              <controlFlow Id="b668653b-c868-484c-aabc-1be709363746" isLeaf="false">
+                <decisionNodeMoniker Id="81a26b7e-253c-43fd-94af-c7cc4a716ef5" LastKnownName="Decision1" />
+                <elementDefinition Id="40cb02e6-c4bf-43e3-b585-37b8ca24bc46" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="b588fef0-9146-4e34-9eab-483979e867c9" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="15dbf64f-eef1-4a71-b796-bbe4a0bcebfb" />
+                  <upperBound>
+                    <literalInteger Id="19ffcafc-f9de-4046-b4bf-3719134c7a85" name="2147483647" value="2147483647">
+                      <elementDefinition Id="7062dbd2-c5e6-4b49-a982-0fddc890f236" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <decisionNode Id="81a26b7e-253c-43fd-94af-c7cc4a716ef5" name="Decision1" isLeaf="false">
+            <elementDefinition Id="6f119159-4db3-4e4e-b93d-425d09790c1e" />
+            <flowNodeTargets>
+              <controlFlow Id="8af2a642-d22e-446f-bfa0-6dd3ffb25089" isLeaf="false">
+                <opaqueActionMoniker Id="ed1e27e5-6e07-4145-9383-e64a94d3a08c" LastKnownName="Mostrar mensaje &quot;respuesta correcta&quot;" />
+                <elementDefinition Id="b740a20f-00f4-4510-918f-928d6beb6f98" />
+              </controlFlow>
+              <controlFlow Id="f2928ff4-3ff5-4461-82bd-e268e1d2c52c" isLeaf="false">
+                <opaqueActionMoniker Id="9aec0471-416e-47df-b8d3-a0ccc3564d16" LastKnownName="Mostrar mensaje &quot;respuesta incorrecta&quot;" />
+                <elementDefinition Id="8b5e2aaf-1d57-498a-a9a9-ee5cc746adb2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="ed1e27e5-6e07-4145-9383-e64a94d3a08c" name="Mostrar mensaje &quot;respuesta correcta&quot;" isLeaf="false">
+            <elementDefinition Id="f8126455-f3cf-4fbd-b0a9-278292c4a47c" />
+            <flowNodeTargets>
+              <controlFlow Id="ff913992-ee05-40ea-b8c4-4ea7cae9d695" isLeaf="false">
+                <activityFinalNodeMoniker Id="eb014290-283b-4b94-87b4-5b4333c87ec6" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="e21da377-16e5-4715-a68e-07c644c15353" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9aec0471-416e-47df-b8d3-a0ccc3564d16" name="Mostrar mensaje &quot;respuesta incorrecta&quot;" isLeaf="false">
+            <elementDefinition Id="3fc5d7fa-30fb-4170-ac3c-4e1b91f76b76" />
+            <flowNodeTargets>
+              <controlFlow Id="9a0db8a8-247b-466e-bdb1-0f511fe63530" isLeaf="false">
+                <opaqueActionMoniker Id="53bc9a01-8b6d-4f3e-9b49-c5748c28012b" LastKnownName="Seleccionar la respuesta" />
+                <elementDefinition Id="034934ac-fc16-4c15-8102-8bba5083b282" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="eb014290-283b-4b94-87b4-5b4333c87ec6" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="5dc4128e-47f4-4100-9f34-6ebf16c2ebf3" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="a98ab739-d95a-48d9-88e8-cf136e6ec04d" name="ModelingProject_Ejemplo">
+    <elementDefinition Id="544ca9f4-3258-4c47-af68-171b360cf9b0" />
+  </package>
+</activityRootModel>

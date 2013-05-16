@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="544ca9f4-3258-4c47-af68-171b360cf9b0"
+  name="ModelingProject_Ejemplo" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="20243282-aecd-48b4-adc2-e6302ac2c880">
+      <body>Si la respuesta es correcta</body>
+    </comment>
+    <comment
+      Id="0d502025-0eb4-4b4f-86ea-f937471ee0e2">
+      <body>Revisar si la respuesta seleccionada es la correcta
+</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="6f119159-4db3-4e4e-b93d-425d09790c1e"
+          LastKnownName="Decision1"
+          LastKnownLocation="ModelingProject_Ejemplo.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="f9578ba0-0b50-4fc3-b5a2-a5f7cad10d16"
+        name="Activity_Example"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="839dbbff-db4b-476d-a848-1ede58e439dc"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="08ff1115-d6a6-4aa4-a445-1c2615b7f173"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a39974be-5542-455c-b1f0-94b8b316c834"
+                  LastKnownName="Seleccionar nivel"
+                  LastKnownLocation="ModelingProject_Ejemplo.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="a39974be-5542-455c-b1f0-94b8b316c834"
+            name="Seleccionar nivel"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="18fc2a75-7ef8-47ee-ae05-b4814d4abcf9"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="782e2a9b-7b3b-4ab5-9905-0bc76c1800cf"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <inputPinMoniker
+                        Id="6497b442-94cb-481c-a6a6-99be25a93a29"
+                        LastKnownName="Nivel"
+                        LastKnownLocation="ModelingProject_Ejemplo.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="825299be-33d7-4ab2-b3ca-2d29b88f1768"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction
+            Id="52bcc1d8-3bce-409c-a963-29df4316eacf"
+            name="Generar problema random"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="8e9ca812-c1c5-439e-b81c-2c0e3f8b0b2d"
+                  name="Problema"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="00e364f3-0741-4607-ad11-efe34b71a9e5"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <inputPinMoniker
+                        Id="b4a7d8c1-f95c-496a-8a81-45a4885e5c94"
+                        LastKnownLocation="ModelingProject_Ejemplo.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="a30daa54-69b5-4e7d-a55b-df2b0be245dc"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="6497b442-94cb-481c-a6a6-99be25a93a29"
+                  name="Nivel"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="2b3932e9-eed4-4669-87fc-5accbf5c797b"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction
+            Id="a4ec33d2-880e-4489-b8fe-d3f8288424a4"
+            name="Mostrar el problema"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1c2ef49f-ba0f-4051-8f47-04e3fdc93e40"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="73504606-6d72-4237-83fb-025d132a1c67"
+                  LastKnownName="Seleccionar la respuesta"
+                  LastKnownLocation="ModelingProject_Ejemplo.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="b4a7d8c1-f95c-496a-8a81-45a4885e5c94"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="c2792005-82f9-457e-810d-23108fc0185c"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction
+            Id="73504606-6d72-4237-83fb-025d132a1c67"
+            name="Seleccionar la respuesta"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="91dba11f-5c70-4a7a-934f-115056f5827f"
+                  name="Respuesta"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="5721ffe3-1d2f-40ed-83f6-a968ea7fdeae"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <inputPinMoniker
+                        Id="15dbf64f-eef1-4a71-b796-bbe4a0bcebfb"
+                        LastKnownLocation="ModelingProject_Ejemplo.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="f83b24dc-0409-46d8-a8b8-18caec0dae86"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction
+            Id="d1663bab-8404-4018-9578-86f3bc55144d"
+            name="Verificar respuesta"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="40cb02e6-c4bf-43e3-b585-37b8ca24bc46"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="6f119159-4db3-4e4e-b93d-425d09790c1e"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingProject_Ejemplo.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="15dbf64f-eef1-4a71-b796-bbe4a0bcebfb"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="7062dbd2-c5e6-4b49-a982-0fddc890f236"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <decisionNode
+            Id="6f119159-4db3-4e4e-b93d-425d09790c1e"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b740a20f-00f4-4510-918f-928d6beb6f98"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f8126455-f3cf-4fbd-b0a9-278292c4a47c"
+                  LastKnownName="Mostrar mensaje &quot;respuesta correcta&quot;"
+                  LastKnownLocation="ModelingProject_Ejemplo.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8b5e2aaf-1d57-498a-a9a9-ee5cc746adb2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3fc5d7fa-30fb-4170-ac3c-4e1b91f76b76"
+                  LastKnownName="Mostrar mensaje &quot;respuesta incorrecta&quot;"
+                  LastKnownLocation="ModelingProject_Ejemplo.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="f8126455-f3cf-4fbd-b0a9-278292c4a47c"
+            name="Mostrar mensaje &quot;respuesta correcta&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e21da377-16e5-4715-a68e-07c644c15353"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="5dc4128e-47f4-4100-9f34-6ebf16c2ebf3"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject_Ejemplo.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3fc5d7fa-30fb-4170-ac3c-4e1b91f76b76"
+            name="Mostrar mensaje &quot;respuesta incorrecta&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="034934ac-fc16-4c15-8102-8bba5083b282"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="73504606-6d72-4237-83fb-025d132a1c67"
+                  LastKnownName="Seleccionar la respuesta"
+                  LastKnownLocation="ModelingProject_Ejemplo.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="5dc4128e-47f4-4100-9f34-6ebf16c2ebf3"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
