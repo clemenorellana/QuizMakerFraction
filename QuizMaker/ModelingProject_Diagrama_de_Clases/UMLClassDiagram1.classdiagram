@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e47c9b89-29c5-4307-807f-4454ca821871" name="UMLClassDiagram1" linkedPackageId="b440c30a-13c6-428d-9239-72a4b643dab5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="402ac33a-72ad-4b79-8288-fc8af6086114">
+      <profileInstance Id="ec670dfe-a8e7-490a-82bf-f1916b393da1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1e9255e1-a271-43bc-bd59-0564f3e08099">
+      <profileInstance Id="3e2e820e-b603-4bf4-a497-d4227260a60b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d8de47eb-d5ac-4600-9fad-18fb871c1b72" name="Fraccion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="52458ca7-11f6-46d5-9e73-5a97c490e3c1" />
+        <ownedAttributesInternal>
+          <property Id="77ddd223-b797-4de7-a30b-f8de00c7ac03" name="numerador" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0c27986f-c716-49fc-b9e7-15a1a40213d8" />
+          </property>
+          <property Id="c4d5e706-19cf-46da-83c2-fa4a4845bc04" name="denominador" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0f479b93-c098-4498-8bcf-a9262d3e5be8" />
+          </property>
+          <property Id="eddecff3-ab3c-40c6-8ac7-a21dde58cffa" name="signo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c172f623-e72d-4ead-9f27-925bc4c19e3b" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="87174f1f-bd24-4650-b472-b39b3c76beb1" name="sumar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="97dfdc54-bf0b-4453-baac-636dec949fc9" />
+          </operation>
+          <operation Id="5078f775-12a5-4704-bbe8-9957c9bb18e6" name="restar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="33215873-0bf0-49b8-a45c-7bd122f36d74" />
+          </operation>
+          <operation Id="236a8b88-9036-4a02-9f19-07d5631e303c" name="multiplicar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="560e08cd-3031-4e1b-82a4-6712363dc5da" />
+          </operation>
+          <operation Id="f9ed260e-1ed0-4a80-a8a8-8cf08e65661b" name="dividir" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bd7556b0-56a9-4085-86cb-864e8dee159a" />
+          </operation>
+          <operation Id="04fd55c2-a20d-4df6-9f7f-6e7030983cf2" name="getNumerador" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c9d71ff4-8aaa-4839-afed-650902b261e7" />
+          </operation>
+          <operation Id="a7e0b957-13d7-4401-8655-bcb6e17b0129" name="getDenominador" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="80b31bcb-9814-425b-a95f-275d585759dd" />
+          </operation>
+          <operation Id="a4a4cbb1-b8f4-437c-bfe8-cc91a529d33f" name="Simplificar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c6f02a65-f4c7-453a-bd06-c29fbe4b3c4a" />
+          </operation>
+          <operation Id="acae4334-ee9e-4121-b2a3-c5dfc512367b" name="getSigno" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f5b39874-964a-4fa7-9fe9-bf43f5340bdd" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c599eb81-d64c-48c2-9916-7094e3b62023" name="Problema" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="110ac8c7-aa04-4ab9-98f6-ca9460b97d3f" />
+        <targetEnds>
+          <association Id="7c8b9608-aae8-439c-8342-80e008f1fd90" isDerived="false" sourceEndRoleName="Problema" targetEndRoleName="Fraccion" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d8de47eb-d5ac-4600-9fad-18fb871c1b72" LastKnownName="Fraccion" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38219db8-b5a3-47be-b1c0-b14799c86914" name="Problema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b90741b6-2842-4810-83c0-6d065b8af73c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="efafe96f-c67f-423b-9fb4-5dda273d5eaf" name="Fraccion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="77a653c0-2d0a-4fd6-9296-7ba1da6d4c9f" name="Lower" value="3">
+                      <elementDefinition Id="8e9e1a2d-ac49-4ca1-af71-ecbc67940a55" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9f8862e7-95d2-47b1-ae9f-de9d555bee35" name="Upper" value="3">
+                      <elementDefinition Id="ba830971-dfb5-40d4-ac44-dc3f39ba457d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="60381adc-74e5-4b4b-9a94-9b80dc8e06d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="22b4a1b3-a11a-43c0-aaa6-f56a1faf0868" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="589c546a-305a-4838-acd4-877fc2ca96d2" name="operando1" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="25f59d71-baf8-4b7a-82a2-cf73facb1747" />
+          </property>
+          <property Id="8d92d209-6374-4e3d-9fba-d40eee4cc27a" name="operando2" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a0b6c13e-b343-4801-a587-f9b32230cc72" />
+          </property>
+          <property Id="3508e6bb-a79d-401f-8a96-ca60ac1ae5ee" name="operador" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="78dcfba5-f2b8-42a9-a05b-f02d0fb84bee" />
+          </property>
+          <property Id="e02ff291-56b6-45b4-abd3-45faad592060" name="resultado" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c1b6fec9-d1d8-4b2f-8e7e-2c7caeb88e88" />
+          </property>
+          <property Id="99a00012-c000-4677-a163-5ecb9fc25273" name="opcionesResultado" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="385c115e-6aa8-45ac-83f3-33bd4629b6ef" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9689d305-d667-4c2c-a2bf-0c326ca2dc75" name="getOperador1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6773e456-c156-4b44-ad0f-ad00b1804903" />
+          </operation>
+          <operation Id="6d016154-0202-4cbb-b86e-c1af3c3db99a" name="getOperador2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f7aed290-c912-4890-b783-99387eb304b1" />
+          </operation>
+          <operation Id="2bf7d3c1-2e6a-4d18-a040-015bf47393d0" name="getOperando" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ad9af0d9-9b7b-40f1-a602-27e8078090ee" />
+          </operation>
+          <operation Id="663d7efe-ae5e-4269-846c-c9c880d3a958" name="getResultado" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9cde2d75-b2bd-43df-8bb5-35faa0aa72e4" />
+          </operation>
+          <operation Id="ae4fc826-bf70-47a1-9e85-4e314ffc1cf5" name="generarProblemaRandom" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7249e6af-8508-4836-84c9-75aedb26c198" />
+          </operation>
+          <operation Id="d631b397-004a-49e3-9674-166a16ea90bd" name="generarOpcionesResultado" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="faf5aa89-c2c7-44c2-9f23-967cb7552fde" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="29fe75cf-69ea-4259-8cc5-a8d5ccb2d886" name="Test" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7f5d2496-2112-417b-9e59-ef7063d6179d" />
+        <targetEnds>
+          <association Id="3a7db825-c750-4af5-bd30-550d0b5ec48a" isDerived="false" sourceEndRoleName="Test" targetEndRoleName="Problema" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c599eb81-d64c-48c2-9916-7094e3b62023" LastKnownName="Problema" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8035dd24-3610-4f9d-896e-b7fbd95b2005" name="Test" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3be7abc8-23fa-4c97-a751-5a8be735f84a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a26dd63-a80a-4342-bafc-341a0956d4eb" name="Problema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8a73b097-c28d-448a-a8b1-fdc6ecba84bf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b84e3265-251d-4aa0-87bd-dba712cffa9d" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="37d4a879-fce0-41ce-a714-57abd4aaded0" name="results" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="214f32b2-0b82-4acb-82c2-e943cd5a98eb" />
+          </property>
+          <property Id="16b384a2-e916-4fc5-a876-5db757e749b3" name="problem" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="83222388-7e1f-44e4-8a11-b4730e991fd6" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c88cf660-4d59-4582-bb97-c1638485a7ff" name="verificarRespuesta" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4dc691e6-5dea-4540-a94a-3abbfae1e7b1" />
+          </operation>
+          <operation Id="b7e95105-ef4d-458f-9d30-6813d826f100" name="generarTest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4c4595ae-8c44-432e-95bc-18de316507a3" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="b440c30a-13c6-428d-9239-72a4b643dab5" name="ModelingProject_Diagrama_de_Clases">
+    <elementDefinition Id="22913544-efe3-493b-ab72-1be7efb2bedd" />
+  </package>
+</logicalClassDesignerModel>

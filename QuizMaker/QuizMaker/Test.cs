@@ -12,11 +12,33 @@ namespace QuizMaker
         public Fraccion []results;
         public Problema problem;
 
+        public Problema Problema
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public Problema Problema1
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public void generarTest()
         {
             problem = new Problema();
             problem.generarProblemaRandom(0);
-            results = problem.generarProblemaRandomMalos();
+            results = problem.generarProblemaRandomOpcionesResultado();
 
         }
 

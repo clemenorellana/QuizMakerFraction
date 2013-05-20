@@ -13,13 +13,35 @@ namespace QuizMaker
         private Fraccion operando2;
         private char operador;
         private Fraccion resultado;
-        private Fraccion[] malos;
+        private Fraccion[] opcionesResultado;
 
         enum dificultad { easy, hard };
 
         public Problema()
         {
-            malos = new Fraccion[4];
+            opcionesResultado = new Fraccion[4];
+        }
+
+        public Fraccion Fraccion
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public Fraccion Fraccion1
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
         
         public void generarProblemaRandom(int level)
@@ -82,7 +104,7 @@ namespace QuizMaker
 
         }
 
-        public Fraccion[] generarProblemaRandomMalos()
+        public Fraccion[] generarProblemaRandomOpcionesResultado()
         {
             int cont = 0;
             int pos = 0;
@@ -92,10 +114,10 @@ namespace QuizMaker
             {
                 Random ran = new Random();
                 pos = ran.Next(0,3);
-                if(malos[pos]==null)
+                if(opcionesResultado[pos]==null)
                 {
-                    malos[pos].setNumerador(getResultado().getNumerador()+cont+1);
-                    malos[pos].setDenominador(getResultado().getDenominador());
+                    opcionesResultado[pos].setNumerador(getResultado().getNumerador()+cont+1);
+                    opcionesResultado[pos].setDenominador(getResultado().getDenominador());
 
                     cont++;
                 }
@@ -103,15 +125,15 @@ namespace QuizMaker
 
             for(int i=0;i<4;i++)
             {
-                if(malos[i]==null)
+                if(opcionesResultado[i]==null)
                 {
-                    malos[pos]=getResultado();
+                    opcionesResultado[pos]=getResultado();
                 }
 
             }
 
             
-            return malos;
+            return opcionesResultado;
         }
 
         public Fraccion getOperando1()

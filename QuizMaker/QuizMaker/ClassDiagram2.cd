@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="QuizMaker.Test" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAABABAAAAAAAAAAAAAAAAAAgAAACAAAAAAAA=</HashCode>
+      <FileName>Test.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Problema1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="QuizMaker.Fraccion" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAIAAIICAAAAAQAAAAAAACgAADIAAAAAAQQAIAA=</HashCode>
+      <FileName>Fraccion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuizMaker.Problema" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="QuizMaker.Problema.dificultad" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Problema.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="Fraccion1" Type="QuizMaker.Fraccion">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.048" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAgACAAAAAAAAAACAAAgABAAAAAggIQAAAAA=</HashCode>
+      <FileName>Problema.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Fraccion1" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
